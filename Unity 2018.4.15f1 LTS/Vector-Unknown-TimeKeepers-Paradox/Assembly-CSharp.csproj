@@ -65,32 +65,24 @@
   <ItemGroup>
     <Compile Include="Assets\MathTest.cs" />
     <Compile Include="Assets\puzzleComplete.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Scripts\00Menu\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\01Main\MainGameController.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\InteractOnOff.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\LaserScript.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\MirrorPuzzle.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\MPTools.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\ObjectDuplicate.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\Transformer.cs" />
+    <Compile Include="Assets\Scripts\03Puzzle2\WizardPosition.cs" />
     <Compile Include="Assets\Scripts\cameraManager.cs" />
+    <Compile Include="Assets\Scripts\Common\moveBetweenScenes.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\ItemManager.cs" />
-    <Compile Include="Assets\Scripts\MenuScript.cs" />
-    <Compile Include="Assets\Scripts\moveBetweenScenes.cs" />
     <Compile Include="Assets\Scripts\PositionCheck.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\InteractOnOff.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\LaserScript.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\MirrorPuzzle.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\MPTools.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\ObjectDuplicate.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\Transformer.cs" />
-    <Compile Include="Assets\Scripts\Puzzle2\WizardPosition.cs" />
     <Compile Include="Assets\Scripts\questionManager.cs" />
     <Compile Include="Assets\Scripts\rampManager.cs" />
     <Compile Include="Assets\Scripts\spawnOrbs.cs" />
     <Compile Include="Assets\StartInstructionManager.cs" />
-    <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/jackchen/Desktop/CPI441/Vector-Unkonwn-TimeKeepers-Paradox/Unity 2018.4.15f1 LTS/Vector-Unknown-TimeKeepers-Paradox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
