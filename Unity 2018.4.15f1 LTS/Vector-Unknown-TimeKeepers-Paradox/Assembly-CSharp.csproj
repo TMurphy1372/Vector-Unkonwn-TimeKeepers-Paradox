@@ -63,8 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MathTest.cs" />
-    <Compile Include="Assets\puzzleComplete.cs" />
     <Compile Include="Assets\Scripts\00Menu\MenuScript.cs" />
     <Compile Include="Assets\Scripts\01Main\MainGameController.cs" />
     <Compile Include="Assets\Scripts\03Puzzle2\InteractOnOff.cs" />
@@ -75,14 +73,17 @@
     <Compile Include="Assets\Scripts\03Puzzle2\Transformer.cs" />
     <Compile Include="Assets\Scripts\03Puzzle2\WizardPosition.cs" />
     <Compile Include="Assets\Scripts\cameraManager.cs" />
+    <Compile Include="Assets\Scripts\Common\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Common\moveBetweenScenes.cs" />
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\ItemManager.cs" />
+    <Compile Include="Assets\Scripts\MathTest.cs" />
     <Compile Include="Assets\Scripts\PositionCheck.cs" />
+    <Compile Include="Assets\Scripts\puzzleComplete.cs" />
     <Compile Include="Assets\Scripts\questionManager.cs" />
     <Compile Include="Assets\Scripts\rampManager.cs" />
     <Compile Include="Assets\Scripts\spawnOrbs.cs" />
-    <Compile Include="Assets\StartInstructionManager.cs" />
+    <Compile Include="Assets\Scripts\StartInstructionManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/jackchen/Desktop/CPI441/Vector-Unkonwn-TimeKeepers-Paradox/Unity 2018.4.15f1 LTS/Vector-Unknown-TimeKeepers-Paradox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
