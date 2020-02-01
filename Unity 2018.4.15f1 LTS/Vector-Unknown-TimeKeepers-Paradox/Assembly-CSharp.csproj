@@ -65,6 +65,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\00Menu\MenuScript.cs" />
     <Compile Include="Assets\Scripts\01Main\MainGameController.cs" />
+    <Compile Include="Assets\Scripts\02Puzzle1\Database_Puzzle1.cs" />
+    <Compile Include="Assets\Scripts\02Puzzle1\GameController_Puzzle1.cs" />
+    <Compile Include="Assets\Scripts\02Puzzle1\TopCameraPlayer.cs" />
+    <Compile Include="Assets\Scripts\02Puzzle1\UI_Puzzle1.cs" />
+    <Compile Include="Assets\Scripts\02Puzzle1\VectorPoint.cs" />
     <Compile Include="Assets\Scripts\03Puzzle2\InteractOnOff.cs" />
     <Compile Include="Assets\Scripts\03Puzzle2\LaserScript.cs" />
     <Compile Include="Assets\Scripts\03Puzzle2\MirrorPuzzle.cs" />
@@ -84,6 +89,24 @@
     <Compile Include="Assets\Scripts\rampManager.cs" />
     <Compile Include="Assets\Scripts\spawnOrbs.cs" />
     <Compile Include="Assets\Scripts\StartInstructionManager.cs" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/jackchen/Desktop/CPI441/Vector-Unkonwn-TimeKeepers-Paradox/Unity 2018.4.15f1 LTS/Vector-Unknown-TimeKeepers-Paradox/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

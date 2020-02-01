@@ -16,6 +16,9 @@ EditorBuildSettings:
     guid: 183ff2fd9c2a99d469fbcc525615b061
   - enabled: 1
     path: Assets/Scenes/02Puzzle1.unity
+    guid: 6d6cee42919a240dbb8b8347e4d9fe0b
+  - enabled: 0
+    path: Assets/Scenes/02Puzzle1(Old).unity
     guid: b3123a353292cd24fbad60c5eaa36a11
   - enabled: 1
     path: Assets/Scenes/03Puzzle2.unity

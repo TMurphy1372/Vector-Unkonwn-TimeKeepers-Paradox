@@ -1,8 +1,12 @@
 ﻿<Properties StartupConfiguration="{99CFD19B-DE1D-6761-FD9D-423B42F58B86}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Plugins/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/01Main/MainGameController.cs">
     <Files>
-      <File FileName="Assets/Plugins/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="44" Column="1" />
-      <File FileName="Assets/Plugins/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="73" Column="10" />
+      <File FileName="Assets/Scripts/02Puzzle1/UI_Puzzle1.cs" Line="26" Column="48" />
+      <File FileName="Assets/Scripts/02Puzzle1/GameController_Puzzle1.cs" Line="57" Column="9" />
+      <File FileName="Assets/Scripts/02Puzzle1/Database_Puzzle1.cs" Line="22" Column="27" />
+      <File FileName="Assets/Scripts/02Puzzle1/VectorPoint.cs" Line="23" Column="34" />
+      <File FileName="Assets/Scripts/puzzleComplete.cs" Line="18" Column="6" />
+      <File FileName="Assets/Scripts/01Main/MainGameController.cs" Line="9" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

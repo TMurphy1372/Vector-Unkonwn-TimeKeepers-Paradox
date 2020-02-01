@@ -9,17 +9,12 @@ public class puzzleComplete : MonoBehaviour
     public ParticleSystem congrats;
     public GameObject endportal;
 
-    void Start()
+    private void Start()
     {
         endportal.gameObject.SetActive(false);
     }
 
-    void Update()
-    {
-        
-    }
-
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
