@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{99CFD19B-DE1D-6761-FD9D-423B42F58B86}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/01Main/MainGameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/02Puzzle1/Database_Puzzle1.cs">
     <Files>
       <File FileName="Assets/Scripts/02Puzzle1/UI_Puzzle1.cs" Line="26" Column="48" />
       <File FileName="Assets/Scripts/02Puzzle1/GameController_Puzzle1.cs" Line="57" Column="9" />
@@ -11,7 +11,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c637709e-ffd0-4de8-a143-0d73d79aae83" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1ff60801-30fc-4b37-a6c0-baa0d62da9a5" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
