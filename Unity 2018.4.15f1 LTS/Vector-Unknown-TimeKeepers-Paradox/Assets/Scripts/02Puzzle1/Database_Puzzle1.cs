@@ -5,6 +5,8 @@ using UnityEngine;
 public class Database_Puzzle1 : MonoBehaviour
 {
     public List<Transform> points;
+    public List<GameObject> bridges;
+    [HideInInspector]
     public List<Vector3> pointVectors;
 
     private void Start()

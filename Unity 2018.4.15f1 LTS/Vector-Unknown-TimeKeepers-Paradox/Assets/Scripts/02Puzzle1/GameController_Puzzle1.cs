@@ -8,9 +8,9 @@ public class GameController_Puzzle1 : MonoBehaviour
 
     public UI_Puzzle1 UI;
     public Database_Puzzle1 database;
-    public GameObject Player;
-    public GameObject TopCameraPlayer;
-    public GameObject InputPanel;
+    public GameObject player;
+    public GameObject topCameraPlayer;
+    public GameObject inputPanel;
     public List<GameObject> Bridges;
 
     private int questionNum;
@@ -22,7 +22,7 @@ public class GameController_Puzzle1 : MonoBehaviour
 
     private void Start()
     {
-        InputPanel.SetActive(false);
+        inputPanel.SetActive(false);
     }
 
     private void Update()
@@ -39,22 +39,22 @@ public class GameController_Puzzle1 : MonoBehaviour
         {
             case 1:
                 Camera.main.depth = -1;
-                TopCameraPlayer.GetComponent<TopCameraPlayer>().isTopCamera = true;
-                Player.SetActive(false);
+                topCameraPlayer.GetComponent<TopCameraPlayer>().isTopCamera = true;
+                player.SetActive(false);
                 break;
 
             case -1:
                 Camera.main.depth = 1;
-                TopCameraPlayer.GetComponent<TopCameraPlayer>().isTopCamera = false;
-                Player.SetActive(true);
-                Player.transform.position = new Vector3(TopCameraPlayer.transform.position.x, Player.transform.position.y, TopCameraPlayer.transform.position.z);
+                topCameraPlayer.GetComponent<TopCameraPlayer>().isTopCamera = false;
+                player.SetActive(true);
+                player.transform.position = new Vector3(topCameraPlayer.transform.position.x, player.transform.position.y, topCameraPlayer.transform.position.z);
                 break;
         }
     }
 
     public void ShowInputPanel(bool value)
     {
-        InputPanel.SetActive(value);
+        inputPanel.SetActive(value);
     }
 
     public void SetQuestionNumber(int value)

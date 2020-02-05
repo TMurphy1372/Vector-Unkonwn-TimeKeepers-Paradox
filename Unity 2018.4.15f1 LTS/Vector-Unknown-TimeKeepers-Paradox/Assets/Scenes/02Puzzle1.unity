@@ -559,7 +559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &151774368
 Transform:
   m_ObjectHideFlags: 0
@@ -3812,9 +3812,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 1888312612}
   database: {fileID: 1888312611}
-  Player: {fileID: 136243463}
-  TopCameraPlayer: {fileID: 12497214}
-  InputPanel: {fileID: 1941729572}
+  player: {fileID: 136243463}
+  topCameraPlayer: {fileID: 12497214}
+  inputPanel: {fileID: 1941729572}
   Bridges:
   - {fileID: 151774367}
   - {fileID: 2004453272}
@@ -3850,6 +3850,7 @@ MonoBehaviour:
   - {fileID: 1153403489}
   - {fileID: 1905772619}
   - {fileID: 1305603935}
+  bridges: []
   pointVectors: []
 --- !u!114 &1888312612
 MonoBehaviour:
