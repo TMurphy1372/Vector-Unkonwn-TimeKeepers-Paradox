@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\gameManager.cs" />
     <Compile Include="Assets\Scripts\ItemManager.cs" />
     <Compile Include="Assets\Scripts\MathTest.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PositionCheck.cs" />
     <Compile Include="Assets\Scripts\puzzleComplete.cs" />
     <Compile Include="Assets\Scripts\questionManager.cs" />

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class VectorPoint : MonoBehaviour
 {
     public int QuestionNumber;
+    public float defaultScalar = 0;
+    public float defaultX = 0, defaultY = 0, defaultZ = 0;
     public Text info;
     public Text infoTop;
 
@@ -22,8 +24,10 @@ public class VectorPoint : MonoBehaviour
         {
             if(QuestionNumber != 0)
             {
-                GameController_Puzzle1.gameController.ShowInputPanel(true);
-                GameController_Puzzle1.gameController.SetQuestionNumber(QuestionNumber);
+                GameController_Puzzle1.instance.SetText("Press 'E' to input your answer");
+                GameController_Puzzle1.instance.SetIsTriggerQuestion(true);
+                GameController_Puzzle1.instance.SetQuestionNumber(QuestionNumber);
+                GameController_Puzzle1.instance.SendConstrains(defaultScalar, defaultX, defaultY, defaultZ);
             }
         }
     }
@@ -32,8 +36,8 @@ public class VectorPoint : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            GameController_Puzzle1.gameController.ShowInputPanel(false);
-            GameController_Puzzle1.gameController.SetQuestionNumber(0);
+            GameController_Puzzle1.instance.SetIsTriggerQuestion(false);
+            GameController_Puzzle1.instance.SetQuestionNumber(0);
         }
     }
 }

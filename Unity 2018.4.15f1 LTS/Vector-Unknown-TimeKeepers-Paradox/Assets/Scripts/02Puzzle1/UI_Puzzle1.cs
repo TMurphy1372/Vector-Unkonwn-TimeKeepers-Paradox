@@ -5,40 +5,63 @@ using UnityEngine.UI;
 
 public class UI_Puzzle1 : MonoBehaviour
 {
-    public InputField scalar;
-    public InputField x, y, z;
+    public InputField iptScalar;
+    public InputField iptX, iptY, iptZ;
+
+    [HideInInspector]
+    public float defaultScalar;
+    [HideInInspector]
+    public float defaultX, defaultY, defaultZ;
+
+    public void InitUI()
+    {
+        if(defaultScalar != 0)
+        {
+            iptScalar.text = defaultScalar.ToString();
+            iptScalar.interactable = false;
+        }
+    }
 
     public void SubmitAnswer()
     {
         float scalarValue;
         float xValue, yValue, zValue;
 
-        if (scalar.text == "")
+        if (iptScalar.text == "")
         {
-            Debug.Log("Please input the scalar value");
+            GameController_Puzzle1.instance.SetText("Please input the scalar value");
         }
-        else if (x.text == "" || y.text == "" || z.text == "")
+        else if (iptX.text == "" || iptY.text == "" || iptZ.text == "")
         {
-            Debug.Log("Please input the vector value");
+            GameController_Puzzle1.instance.SetText("Please input the vector value");
         }
-        else if (!float.TryParse(scalar.text, out scalarValue) || !float.TryParse(x.text, out xValue) || !float.TryParse(y.text, out yValue) || !float.TryParse(z.text, out zValue))
+        else if (!float.TryParse(iptScalar.text, out scalarValue) || !float.TryParse(iptX.text, out xValue) || !float.TryParse(iptY.text, out yValue) || !float.TryParse(iptZ.text, out zValue))
         {
-            Debug.Log("Please input numbers"); 
+            GameController_Puzzle1.instance.SetText("Please input numbers"); 
         }
         else
         {
-            GameController_Puzzle1.gameController.CheckAnswer(scalarValue, xValue, yValue, zValue);
-            Debug.Log("Your answer is Scalar: " + scalar.text + ", X: " + x.text + ", Y: " + y.text + ", Z: " + z.text);
+            GameController_Puzzle1.instance.CheckAnswer(scalarValue, xValue, yValue, zValue);
+            Debug.Log("Your answer is Scalar: " + iptScalar.text + ", X: " + iptX.text + ", Y: " + iptY.text + ", Z: " + iptZ.text);
             ClearInputField();
+
+            GameController_Puzzle1.instance.ShowInputPanel(false);
+            GameController_Puzzle1.instance.Continue();
+
+            defaultScalar = 0;
+            defaultX = 0;
+            defaultY = 0;
+            defaultZ = 0;
         }
     }
 
     private void ClearInputField()
     {
-        scalar.text = "";
-        x.text = "";
-        y.text = "";
-        z.text = "";
+        iptScalar.text = "";
+        iptX.text = "";
+        iptY.text = "";
+        iptZ.text = "";
     }
 
+    
 }
