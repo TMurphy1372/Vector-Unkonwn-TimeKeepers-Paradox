@@ -12,7 +12,6 @@ public class GameController_Puzzle1 : MonoBehaviour
     public GameObject Player;
     public GameObject TopCameraPlayer;
     public GameObject InputPanel;
-    public List<GameObject> Bridges;
     public Text txtInstruction;
 
     private int questionNum;
@@ -29,6 +28,8 @@ public class GameController_Puzzle1 : MonoBehaviour
         database.GetComponent<Database_Puzzle1>();
 
         InputPanel.SetActive(false);
+
+        database.Init();
     }
 
     private void Update()
@@ -43,6 +44,12 @@ public class GameController_Puzzle1 : MonoBehaviour
             Pause();
             ShowInputPanel(true);
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Continue();
+            ShowInputPanel(false);
+        }
     }
 
     private void SwitchCamera()
@@ -52,14 +59,13 @@ public class GameController_Puzzle1 : MonoBehaviour
             case 1:
                 Camera.main.depth = -1;
                 TopCameraPlayer.GetComponent<TopCameraPlayer>().isTopCamera = true;
-                Player.SetActive(false);
+                Pause();
                 break;
 
             case -1:
                 Camera.main.depth = 1;
                 TopCameraPlayer.GetComponent<TopCameraPlayer>().isTopCamera = false;
-                Player.SetActive(true);
-                Player.transform.position = new Vector3(TopCameraPlayer.transform.position.x, Player.transform.position.y, TopCameraPlayer.transform.position.z);
+                Continue();
                 break;
         }
     }
@@ -74,15 +80,7 @@ public class GameController_Puzzle1 : MonoBehaviour
 
     public void CheckAnswer(float scalar, float x, float y, float z)
     {
-        if (database.Calculation(questionNum, scalar, x, y, z))
-        {
-            SetText("Correct");
-            Bridges[questionNum - 1].SetActive(true);
-        }
-        else
-        {
-            SetText("Wrong, please try again");
-        }
+        database.Calculation(questionNum, scalar, x, y, z);
     }
 
     public void ShowInputPanel(bool value)

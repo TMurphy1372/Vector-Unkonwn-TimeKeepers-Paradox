@@ -491,6 +491,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuestionNumber: 1
+  defaultScalar: 0
+  defaultX: 0
+  defaultY: 0
+  defaultZ: 0
   info: {fileID: 2234722512120832720}
   infoTop: {fileID: 1711761961}
 --- !u!65 &2217969945826241797

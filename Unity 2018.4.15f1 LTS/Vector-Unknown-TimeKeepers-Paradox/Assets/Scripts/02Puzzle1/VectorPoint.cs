@@ -24,7 +24,9 @@ public class VectorPoint : MonoBehaviour
         {
             if(QuestionNumber != 0)
             {
-                GameController_Puzzle1.instance.SetText("Press 'E' to input your answer");
+                GameController_Puzzle1.instance.SetText("- Press 'E' to input your answer.\n" +
+                                                        "- Press 'Z' to switch into the top-down camera.\n" +
+                                                        "- Press 'Esc' to exit the question.");
                 GameController_Puzzle1.instance.SetIsTriggerQuestion(true);
                 GameController_Puzzle1.instance.SetQuestionNumber(QuestionNumber);
                 GameController_Puzzle1.instance.SendConstrains(defaultScalar, defaultX, defaultY, defaultZ);
@@ -36,6 +38,9 @@ public class VectorPoint : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            GameController_Puzzle1.instance.SetText("- Press Z for top view.\n" +
+                                                    "- Round to whole numbers" +
+                                                    "- Stand on a platform to enter values.");
             GameController_Puzzle1.instance.SetIsTriggerQuestion(false);
             GameController_Puzzle1.instance.SetQuestionNumber(0);
         }

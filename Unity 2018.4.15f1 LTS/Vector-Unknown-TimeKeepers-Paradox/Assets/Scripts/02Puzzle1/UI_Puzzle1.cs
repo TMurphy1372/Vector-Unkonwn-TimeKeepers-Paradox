@@ -43,15 +43,12 @@ public class UI_Puzzle1 : MonoBehaviour
         {
             GameController_Puzzle1.instance.CheckAnswer(scalarValue, xValue, yValue, zValue);
             Debug.Log("Your answer is Scalar: " + iptScalar.text + ", X: " + iptX.text + ", Y: " + iptY.text + ", Z: " + iptZ.text);
-            ClearInputField();
 
             GameController_Puzzle1.instance.ShowInputPanel(false);
+
             GameController_Puzzle1.instance.Continue();
 
-            defaultScalar = 0;
-            defaultX = 0;
-            defaultY = 0;
-            defaultZ = 0;
+            ClearInputField();
         }
     }
 
@@ -61,6 +58,10 @@ public class UI_Puzzle1 : MonoBehaviour
         iptX.text = "";
         iptY.text = "";
         iptZ.text = "";
+        iptScalar.interactable = true;
+        iptX.interactable = true;
+        iptY.interactable = true;
+        iptZ.interactable = true;
     }
 
     
